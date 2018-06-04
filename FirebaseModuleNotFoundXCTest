@@ -1,8 +1,8 @@
-## Bug
+# Bug
 
 Firebase module not being identified on importing project module with XCTest Class.
 
-## Solution
+# Solution
 
 Add header filepath to `SearchPath`. Generally, in Test Target the user search path is empty on initialization. 
 Add the same search path which is applicable for main project module.
