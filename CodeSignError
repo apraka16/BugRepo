@@ -1,0 +1,14 @@
+// Error: Codesign wants to access key access
+
+// Resolution:
+
+// Open the project into the Xcode.
+// Select `project.app` file and right click on it, select “show in finder” option.
+// Open terminal and go to the `project.app` file path.
+
+xattr -lr project.app
+xattr -cr project.app
+
+// Reboot Mac
+// Open the project and run.
+
